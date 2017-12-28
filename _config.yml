@@ -9,3 +9,8 @@ github_username: tim-thompson
 # Build settings
 markdown: kramdown
 baseurl: /blog
+
+plugins: [jekyll-paginate] 
+
+paginate: 10
+paginate_path: /page:num/
