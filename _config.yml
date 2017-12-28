@@ -8,3 +8,4 @@ github_username: tim-thompson
 
 # Build settings
 markdown: kramdown
+baseurl: /blog

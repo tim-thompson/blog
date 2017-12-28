@@ -5,7 +5,7 @@ layout: default
 <div class="blog-post">
     <div class="row">
         <div class="u-full-width title">
-            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
         </div>
     </div>
     <div class="row">
@@ -16,7 +16,7 @@ layout: default
     <div class="row">
         <div class="u-full-width content">
             {{ post.content }}
-            <a href="{{ post.url }}">Continue Reading...</a>
+            <a href="{{ site.baseurl }}{{ post.url }}">Continue Reading...</a>
             <hr></hr>
         </div>
     </div>
