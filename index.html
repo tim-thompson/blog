@@ -1,11 +1,26 @@
 ---
 layout: default
 ---
-<h1>Latest Post</h1>
-{% for post in site.posts limit:1 %}
-... Show the first post all big ...
-{% endfor %}
-<h1>Recent Posts</h1>
-{% for post in site.posts offset:1 limit:2 %}
-... Show the next two posts ...
+{% for post in site.posts limit:5 %}
+<div class="blog-post">
+    <div class="row">
+        <div class="u-full-width title">
+            <h4><a href="/{{ post.url }}">{{ post.title }}</a></h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="u-full-width date">
+            {{ post.date }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="u-full-width content">
+            {{ post.content }}
+            <a href="/{{ post.url }}">Continue Reading...</a>
+            <br></br>
+            <a href="/{{ post.url }}#disqus_thread">Comments</a>
+            <hr></hr>
+        </div>
+    </div>
+</div>
 {% endfor %}
