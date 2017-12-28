@@ -5,20 +5,18 @@ layout: default
 <div class="blog-post">
     <div class="row">
         <div class="u-full-width title">
-            <h4><a href="/{{ post.url }}">{{ post.title }}</a></h4>
+            <h4><a href="/{{ post.id }}">{{ post.title }}</a></h4>
         </div>
     </div>
     <div class="row">
         <div class="u-full-width date">
-            {{ post.date }}
+            {{ post.date | date_to_long_string }}
         </div>
     </div>
     <div class="row">
         <div class="u-full-width content">
             {{ post.content }}
-            <a href="/{{ post.url }}">Continue Reading...</a>
-            <br></br>
-            <a href="/{{ post.url }}#disqus_thread">Comments</a>
+            <a href="/{{ post.id }}">Continue Reading...</a>
             <hr></hr>
         </div>
     </div>
