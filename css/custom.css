@@ -1,7 +1,7 @@
 html { overflow-x:auto; overflow-y:scroll; }
 
 .content {
-  text-align: justify;
+  text-align: left;
   text-justify: auto;
 }
 
