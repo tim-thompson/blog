@@ -8,7 +8,7 @@ github_username: tim-thompson
 
 # Build settings
 markdown: kramdown
-baseurl: /blog
+url: http://tim-thompson.co.uk
 
 plugins: [jekyll-paginate] 
 
