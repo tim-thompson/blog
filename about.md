@@ -2,7 +2,6 @@
 layout: page
 title: About
 ---
+I am a full time Software Engineer based in London as part of the Capgemini Big Data team, and I am also on the Capgemini Degree Apprenticeship program. I have had the opportunity to work with a variety of big data technologies for a large public sector client. Recently, I have spent time building REST APIs with Spring Boot and Java 8 to retrieve data from HBase for use as part of a real time risking process using Drools. 
 
-Tim is a full time Software Engineer based in London who likes to make games in his spare time. His full time employment also includes studying for a diploma and a degree in Software Engineering as part of a Higher Apprenticeship program.
-
-Having always been interested in computers and technology, Tim taught himself basic programming from an early age. After the acquisition of a number of programming books for his 15th birthday his excitement and passion for coding flourished and Tim greatly enjoys furthering his knowledge on a variety of topics
+In my own time I love to tinker with Python, especially with Flask to build REST microservices. I am learning React and hope to release my own SaaS product in the future. Recently I have become interested in Serverless deployment patterns and have been building highly available microservices using AWS Lambda, API Gatewawy, Dynamo DB, Flask, Python 3 and Zappa.
