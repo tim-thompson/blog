@@ -19,17 +19,11 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
         
         <p class="view">
-          {% if site.github_username %}
-          <a href="https://github.com/{{ site.github_username }}">GitHub</a></br>
-          {% endif %}
+          <a href="https://github.com/{{ site.github_username }}">GitHub, </a>
 
-          {% if site.twitter_username %}
-          <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a></br>
-          {% endif %}
+          <a href="https://twitter.com/{{ site.twitter_username }}">Twitter, </a>
 
-          {% if site.email %}
-          <a href="mailto:{{ site.email }}">Email</a></br>
-          {% endif %}
+          <a href="mailto:{{ site.email }}">Email</a>
         </p>
       </header>
       <section>
