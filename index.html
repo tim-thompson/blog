@@ -1,14 +1,13 @@
 ---
 layout: default
-title: Blog
+title: blog
 ---
 {% for post in paginator.posts %}
-<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-<p class="view">{{ post.date | date: "%-d %B %Y" }}</br>
-by {{ post.author | default: site.author }}</p>
-{{ post.excerpt }}
-<a href="{{ site.baseurl }}{{ post.url }}">Continue Reading...</a>
-<hr></hr>
+  <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="view">{{ post.date | date: "%-d %B %Y" }}</br>
+  by {{ post.author | default: site.author }}</p>
+  {{ post.excerpt }}
+  <a href="{{ site.baseurl }}{{ post.url }}">Continue Reading...</a>
 {% endfor %}
 
 <!-- pagination -->
