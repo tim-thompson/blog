@@ -3,25 +3,12 @@ layout: default
 title: Blog
 ---
 {% for post in paginator.posts %}
-<div class="blog-post">
-    <div class="row">
-        <div class="u-full-width title">
-            <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-        </div>
-    </div>
-    <div class="row">
-        <div class="u-full-width date">
-            {{ post.date | date_to_long_string }}
-        </div>
-    </div>
-    <div class="row">
-        <div class="u-full-width content">
-            {{ post.content }}
-            <a href="{{ site.baseurl }}{{ post.url }}">Continue Reading...</a>
-            <hr></hr>
-        </div>
-    </div>
-</div>
+<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<p class="view">{{ post.date | date: "%-d %B %Y" }}</br>
+by {{ post.author | default: site.author }}</p>
+{{ post.excerpt }}
+<a href="{{ site.baseurl }}{{ post.url }}">Continue Reading...</a>
+<hr></hr>
 {% endfor %}
 
 <!-- pagination -->
