@@ -24,6 +24,8 @@ title: blog
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
         <a class="active">{{ page }}</a>
+      {% elsif page == 1 %}
+        <a href="http://tim-thompson.co.uk">1</a>
       {% else %}
         <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
       {% endif %}
