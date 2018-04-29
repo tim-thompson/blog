@@ -9,7 +9,6 @@ title: blog
   {{ post.content | number_of_words | plus: 250 | divided_by: 180 | append: " minutes to read" }}</br>
   {{ post.excerpt }}
   </p>
-  <a href="{{ site.baseurl }}{{ post.url }}">Continue Reading...</a>
 {% endfor %}
 
 <!-- pagination -->
