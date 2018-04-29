@@ -24,7 +24,7 @@ title: blog
     {% if page == 1 %}
       <a href="{{ site.baseurl }}">{{ 1 }}</a>
     {% elsif page == paginator.page %}
-      <span class="webjeda">{{ page }}</span>
+      <a class="webjeda">{{ page }}</a>
     {% else %}
       <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
