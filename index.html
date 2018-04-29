@@ -17,14 +17,14 @@ title: blog
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
   {% else %}
-    <span>&laquo;</span>
+    <a>&laquo;</a>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == 1 %}
       <a href="{{ site.baseurl }}">{{ 1 }}</a>
     {% elsif page == paginator.page %}
-      <a class="webjeda">{{ page }}</a>
+      <a class="active">{{ page }}</a>
     {% else %}
       <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
@@ -33,7 +33,7 @@ title: blog
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
   {% else %}
-    <span>Next &raquo;</span>
+    <a>&raquo;</a>
   {% endif %}
 </div>
 {% endif %}
