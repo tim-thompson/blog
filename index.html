@@ -21,10 +21,10 @@ title: blog
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <span class="webjeda">{{ page }}</span>
-    {% elsif page == 1 %}
+    {% if page == 1 %}
       <a href="{{ site.baseurl }}">{{ 1 }}</a>
+    {% elsif page == paginator.page %}
+      <span class="webjeda">{{ page }}</span>
     {% else %}
       <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
