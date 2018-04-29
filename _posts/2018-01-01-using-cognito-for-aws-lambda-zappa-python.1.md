@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Productivity
+title: Using Cognito for Lambda API's Created with Zappa
 ---
 
 I am only productive when I am doing something that I want to do. Unfortunately life is full of things that I don't want to do, but I still have to do them. I am very much a culprit of leaving these kinds of tasks to the very last minute. At which point I either realise that it wasn't so bad, or that I should have started it sooner. Either way I usually end up wasting time.
