@@ -13,7 +13,7 @@ title: blog
 
 <!-- pagination -->
 {% if paginator.total_pages > 1 %}
-<div class="center>
+<div class="center">
   <div class="pagination"> 
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
