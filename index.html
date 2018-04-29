@@ -4,7 +4,7 @@ title: blog
 ---
 {% for post in paginator.posts %}
   <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-  <p>
+  <p class="view">
   {{ post.date | date: "%-d %B %Y" }}</br>
   {{ post.content | number_of_words | plus: 250 | divided_by: 180 | append: " minutes to read" }}</br>
   {{ post.excerpt }}
