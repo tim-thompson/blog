@@ -5,15 +5,16 @@ email: me@tim-thompson.co.uk
 description: Personal dev blog, I definitely know what I'm doing...
 twitter_username: timthompson141
 github_username: tim-thompson
+theme: jekyll-theme-minimal
+permalink: /:title
 
 # Build settings
 markdown: kramdown
 url: http://tim-thompson.co.uk
 
+# Plugins
 plugins: [jekyll-paginate] 
 
+# Pagination Options
 paginate: 5
 paginate_path: /page:num/
-
-theme: jekyll-theme-minimal
-permalink: /:title
