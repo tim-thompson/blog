@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+html {
+  overflow-y: scroll;
+}
+
 .center {
     text-align: center;
 }
