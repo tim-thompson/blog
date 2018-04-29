@@ -13,27 +13,29 @@ title: blog
 
 <!-- pagination -->
 {% if paginator.total_pages > 1 %}
-<div class="pagination"> 
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
-  {% else %}
-    <a>&laquo;</a>
-  {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == 1 %}
-      <a href="{{ site.baseurl }}">{{ 1 }}</a>
-    {% elsif page == paginator.page %}
-      <a class="active">{{ page }}</a>
+<div class="center>
+  <div class="pagination"> 
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
     {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      <a>&laquo;</a>
     {% endif %}
-  {% endfor %}
 
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
-  {% else %}
-    <a>&raquo;</a>
-  {% endif %}
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == 1 %}
+        <a href="{{ site.baseurl }}">{{ 1 }}</a>
+      {% elsif page == paginator.page %}
+        <a class="active">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+    {% else %}
+      <a>&raquo;</a>
+    {% endif %}
+  </div>
 </div>
 {% endif %}
