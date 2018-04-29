@@ -4,6 +4,6 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 <p class="view">{{ page.date | date: "%-d %B %Y" }}</br>
-                {{ post.content | number_of_words | plus: 250 | divided_by: 180 | append: " minutes to read" }}</p>
+                {{ page.content | number_of_words | plus: 250 | divided_by: 180 | append: " minutes to read" }}</p>
 
 {{content}}
