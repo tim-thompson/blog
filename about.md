@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: About
 ---
 I am a full time Software Engineer based in London as part of the Capgemini Big Data team, and I am also on the Capgemini Degree Apprenticeship program. I have had the opportunity to work with a variety of big data technologies for a large public sector client. Recently, I have spent time building REST APIs with Spring Boot and Java 8 to retrieve data from HBase for use as part of a real time risking process using Drools. 
