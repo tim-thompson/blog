@@ -13,13 +13,16 @@ Many of the tutorials for [GitHub Pages](https://pages.github.com/) and [Jekyll]
 
 The commits are a little messy, but as it didn't matter if I wrecked the site at any point I don't really care! For larger changes and writing posts I have the whole repository cloned to my dev machine. But I don't run it locally at all. I lose some functionality around drafts but at the end of the day it's a markdown file so I know roughly what it will look like.
 
-Even if there are problems, the workflow for updating is so quick thanks to [GitHub Pages](https://pages.github.com/) auto building the site within seconds, that making fixes is quick and easy.
+Even if there are problems, the workflow for updating is so quick thanks to [GitHub Pages](https://pages.github.com/) auto building the site within seconds of each commit, that making fixes is quick and easy.
 
-I'm not going to write out a tutorial for setting up a [Jekyll](https://jekyllrb.com/) site on [GitHub Pages](https://pages.github.com/) (not right now anyway) as the official documentation is pretty good and there are thousands of tutorials already covering the process in painstaking detail.
+![GitHub Pages Builds](assets/images/how-i-made-this-blog-gh-pages-build.png)
 
-INSERT TUTORIALS HERE
+I'm not going to write out a tutorial for setting up a [Jekyll](https://jekyllrb.com/) site on [GitHub Pages](https://pages.github.com/) (not right now anyway) as the official documentation is pretty good and there are thousands of tutorials already covering the process in painstaking detail. I have more interesting things to tinker with and write about, however here are some links to get you started.
 
-Instead I'd like to highlight a couple of cool things I found. Firstly, the [Liquid Template Language](https://shopify.github.io/liquid/) used by [Jekyll](https://jekyllrb.com/). The syntax reminds me a lot of Jinja2 used by Flask which I've had a decent amount of experience with.
+* [Getting Started with GitHub Pages](https://guides.github.com/features/pages/)
+* [Jekyll Docs](https://jekyllrb.com/docs/home/)
+
+Instead I'd like to highlight a couple of cool things I found. Firstly, the [Liquid Template Language](https://shopify.github.io/liquid/) used by [Jekyll](https://jekyllrb.com/). For anyone familiar with [Jinja2](http://jinja.pocoo.org/docs/2.10/) the syntax will feel very familiar.
 
 Liquid has many built in functions for processing the content it displays. For example on my homepage the below snippet of code is used render an excerpt of each post.
 
