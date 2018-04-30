@@ -19,27 +19,12 @@ INSERT TUTORIALS HERE
 
 Instead I'd like to highlight a couple of cool things I found. Firstly the **Liquid Templating Engine** used by Jekyll. The syntax reminded me a lot of Jinja2 used by Flask which I've had a decent amount of experience with.
 
-Liquid has many built in functions for processing the content it displays. For example on my homepage the below snippet of code is used render each post.
+Liquid has many built in functions for processing the content it displays. For example on my homepage the below snippet of code is used render an excerpt of each post.
 
 {% raw %}
 ```liquid
 {{ post.date | date: "%-d %B %Y" }}
-{{ post.content | number_of_words | plus: 250 | divided_by: 180 | append: " minutes to read" }}
+{{ post.content | number_of_words | divided_by: 180 | append: " minutes to read" }}
 {{ post.excerpt }}
 ```
 {% endraw %}
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
