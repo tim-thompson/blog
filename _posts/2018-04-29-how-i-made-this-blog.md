@@ -7,19 +7,19 @@ I have built my fair share of Wordpress sites over the last few years. Despite s
 
 ![Jekyll Logo](https://raw.githubusercontent.com/jekyll/brand/master/jekyll-logo-light-transparent.png)
 
-[GitHub Pages](https://pages.github.com/) is a free service offered by GitHub to host static websites from a git repository. It has built in support for [Jekyll](https://jekyllrb.com/), a static site generator that takes markdown files and converts them into static web pages. It has become a useful tool for many open source groups that use it for hosting documentation. The Jekyll documentation is itself hosted on GitHub Pages with Jekyll.
+[GitHub Pages](https://pages.github.com/) is a free service offered by GitHub to host static websites from a git repository. It has built in support for [Jekyll](https://jekyllrb.com/), a static site generator that takes markdown files and converts them into static web pages. It has become a useful tool for many open source groups that use it for hosting documentation. The [Jekyll](https://jekyllrb.com/) documentation is itself hosted on [GitHub Pages](https://pages.github.com/) with [Jekyll](https://jekyllrb.com/).
 
-Many of the tutorials for GitHub Pages and Jekyll focus on getting the site running locally using Ruby. As somebody that has never used Ruby and only wanted to hack together something simple I couldn't be bothered with getting set up and learning about gem files. So I ended up doing most of my site modifications using the Github editor.
+Many of the tutorials for [GitHub Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/) focus on getting the site running locally using Ruby. As somebody that has never used Ruby and only wanted to hack together something simple I couldn't be bothered with getting set up and learning about gem files. So I ended up doing most of my site modifications using the Github editor.
 
 The commits are a little messy, but as it didn't matter if I wrecked the site at any point I don't really care! For larger changes and writing posts I have the whole repository cloned to my dev machine. But I don't run it locally at all. I lose some functionality around drafts but at the end of the day it's a markdown file so I know roughly what it will look like.
 
-Even if there are problems, the workflow for updating is so quick thanks to GitHub Pages auto building the site within seconds, that making fixes is quick and easy.
+Even if there are problems, the workflow for updating is so quick thanks to [GitHub Pages](https://pages.github.com/) auto building the site within seconds, that making fixes is quick and easy.
 
-I'm not going to write out a tutorial for setting up a Jekyll site on GitHub Pages (not right now anyway) as the official documentation is pretty good and there are thousands of tutorials already covering the process in painstaking detail.
+I'm not going to write out a tutorial for setting up a [Jekyll](https://jekyllrb.com/) site on [GitHub Pages](https://pages.github.com/) (not right now anyway) as the official documentation is pretty good and there are thousands of tutorials already covering the process in painstaking detail.
 
 INSERT TUTORIALS HERE
 
-Instead I'd like to highlight a couple of cool things I found. Firstly, the [Liquid Template Language](https://shopify.github.io/liquid/) used by Jekyll. The syntax reminds me a lot of Jinja2 used by Flask which I've had a decent amount of experience with.
+Instead I'd like to highlight a couple of cool things I found. Firstly, the [Liquid Template Language](https://shopify.github.io/liquid/) used by [Jekyll](https://jekyllrb.com/). The syntax reminds me a lot of Jinja2 used by Flask which I've had a decent amount of experience with.
 
 Liquid has many built in functions for processing the content it displays. For example on my homepage the below snippet of code is used render an excerpt of each post.
 
@@ -37,4 +37,4 @@ The second line of the snippet shows how filters can be chained together. It tak
 
 This means I can display a quick and dirty 'minutes to read' value calculated entirely client side from the post content.
 
-The final line uses a feature of Jekyll. The excerpt data item is part of the post's data hash and by default is made up of the first block of text in the post. However, this can be customised using an excerpt_separator.
+The final line uses a feature of [Jekyll](https://jekyllrb.com/). The excerpt data item is part of the post's data hash and by default is made up of the first block of text in the post. However, this can be customised using an excerpt_separator.
