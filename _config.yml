@@ -10,7 +10,9 @@ permalink: /:title
 url: http://tim-thompson.co.uk
 
 # Plugins
-plugins: [jekyll-paginate] 
+plugins: 
+  - jekyll-paginate
+  - jekyll-feed
 
 # Pagination Options
 paginate: 5
