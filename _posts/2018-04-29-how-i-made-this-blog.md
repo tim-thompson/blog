@@ -15,8 +15,7 @@ Even if there are problems, the workflow for updating is so quick thanks to GitH
 
 I'm not going to write out a tutorial for setting up a Jekyll site on GitHub Pages (not right now anyway) as the official documentation is pretty good and there are thousands of tutorials already covering the process in painstaking detail.
 
-[A Cool Tutorial]()
-[Another Cool Tutorial]()
+INSERT TUTORIALS HERE
 
 Instead I'd like to highlight a couple of cool things I found. Firstly the **Liquid Templating Engine** used by Jekyll. The syntax reminded me a lot of Jinja2 used by Flask which I've had a decent amount of experience with.
 
