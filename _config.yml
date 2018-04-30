@@ -7,9 +7,6 @@ twitter_username: timthompson141
 github_username: tim-thompson
 theme: jekyll-theme-minimal
 permalink: /:title
-
-# Build settings
-markdown: kramdown
 url: http://tim-thompson.co.uk
 
 # Plugins
