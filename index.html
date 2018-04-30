@@ -6,7 +6,7 @@ title: blog
   <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
   <p class="view">
   {{ post.date | date: "%-d %B %Y" }}</br>
-  {{ post.content | number_of_words | plus: 250 | divided_by: 180 | append: " minutes to read" }}</br>
+  {{ post.content | number_of_words | divided_by: 180 | append: " minutes to read" }}</br>
   {{ post.excerpt }}
   </p>
 {% endfor %}
