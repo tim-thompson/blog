@@ -3,9 +3,11 @@ layout: post
 title: How I Made This Blog with Jekyll and GitHub Pages
 ---
 
-I have built my fair share of Wordpress sites over the last few years. Despite services like Digital Ocean making setup a breeze, I find Wordpress to be clunky and unintuitive. For a CMS focussed on content creation/blogging I am astounded by how flaky the editor is. So I couldn't bring myself to use Wordpress for my own simple dev blog. Instead I settled on using [Jekyll](https://jekyllrb.com/) with [GitHub Pages](https://pages.github.com/) to hack together something simple, fast and free that suits my needs perfectly. And so far I love it!
+I have built my fair share of Wordpress sites over the last few years. Despite services like Digital Ocean making setup a breeze, I find Wordpress to be clunky and unintuitive. For a CMS focussed on content creation/blogging I am astounded by how flaky the editor is. So for my own simple dev blog I settled on using [Jekyll](https://jekyllrb.com/) with [GitHub Pages](https://pages.github.com/) to hack together something simple, fast and free that suits my needs perfectly. And so far I love it!
 
-GitHub Pages is a free service offered by GitHub to host static websites from a git repository. It has built in support for Jekyll, a static site generator that takes markdown files and converts them into static web pages. It has become a useful tool for many open source groups that use it for hosting documentation, for example Facebook use it for hosting the React documentation.
+![Jekyll Logo](https://raw.githubusercontent.com/jekyll/brand/master/jekyll-logo-light-transparent.png)
+
+[GitHub Pages](https://pages.github.com/) is a free service offered by GitHub to host static websites from a git repository. It has built in support for [Jekyll](https://jekyllrb.com/), a static site generator that takes markdown files and converts them into static web pages. It has become a useful tool for many open source groups that use it for hosting documentation. The Jekyll documentation is itself hosted on GitHub Pages with Jekyll.
 
 Many of the tutorials for GitHub Pages and Jekyll focus on getting the site running locally using Ruby. As somebody that has never used Ruby and only wanted to hack together something simple I couldn't be bothered with getting set up and learning about gem files. So I ended up doing most of my site modifications using the Github editor.
 
@@ -17,7 +19,7 @@ I'm not going to write out a tutorial for setting up a Jekyll site on GitHub Pag
 
 INSERT TUTORIALS HERE
 
-Instead I'd like to highlight a couple of cool things I found. Firstly the **Liquid Templating Engine** used by Jekyll. The syntax reminded me a lot of Jinja2 used by Flask which I've had a decent amount of experience with.
+Instead I'd like to highlight a couple of cool things I found. Firstly, the [Liquid Template Language](https://shopify.github.io/liquid/) used by Jekyll. The syntax reminds me a lot of Jinja2 used by Flask which I've had a decent amount of experience with.
 
 Liquid has many built in functions for processing the content it displays. For example on my homepage the below snippet of code is used render an excerpt of each post.
 
