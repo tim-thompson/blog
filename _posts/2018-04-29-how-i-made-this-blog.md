@@ -24,7 +24,15 @@ Liquid has many built in functions for processing the content it displays. For e
 {% raw %}
 ```liquid
 {{ post.date | date: "%-d %B %Y" }}
-{{ post.content | number_of_words | divided_by: 180 | append: " minutes to read" }}
+{{ post.content | number_of_words | divided_by: 190 | append: " minutes to read" }}
 {{ post.excerpt }}
 ```
 {% endraw %}
+
+This snippet does some cool things. Liquid allows applying filters to objects in curly braces. For example the first line of the snippet applies a date filter that converts the post date '2018-04-29', stored in the post filename, to '29 April 2018'.
+
+The second line of the snippet shows how filters can be chained together. It takes the number of words in the post content and divides it by 190, an average words per minute value I found on Google, and appends some text.
+
+This means I can display a quick and dirty 'minutes to read' value calculated entirely client side from the post content.
+
+The final line uses a feature of Jekyll. The excerpt data item is part of the post's data hash and by default is made up of the first block of text in the post. However, this can be customised using an excerpt_separator.
