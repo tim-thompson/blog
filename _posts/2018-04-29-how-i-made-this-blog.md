@@ -21,11 +21,13 @@ Instead I'd like to highlight a couple of cool things I found. Firstly the **Liq
 
 Liquid has many built in functions for processing the content it displays. For example on my homepage the below snippet of code is used render each post.
 
+{% raw %}
 ```liquid
 {{ post.date | date: "%-d %B %Y" }}
 {{ post.content | number_of_words | plus: 250 | divided_by: 180 | append: " minutes to read" }}
 {{ post.excerpt }}
 ```
+{% endraw %}
 
 ```js
 // Javascript code with syntax highlighting.
