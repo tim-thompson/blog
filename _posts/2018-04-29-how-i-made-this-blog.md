@@ -15,7 +15,7 @@ The commits are a little messy, but as it didn't matter if I wrecked the site at
 
 Even if there are problems, the workflow for updating is so quick thanks to [GitHub Pages](https://pages.github.com/) auto building the site within seconds of each commit, that making fixes is quick and easy.
 
-![GitHub Pages Builds](assets/images/how-i-made-this-blog-gh-pages-build.png)
+![GitHub Pages Builds](../assets/images/how-i-made-this-blog-gh-pages-build.png)
 
 I'm not going to write out a tutorial for setting up a [Jekyll](https://jekyllrb.com/) site on [GitHub Pages](https://pages.github.com/) (not right now anyway) as the official documentation is pretty good and there are thousands of tutorials already covering the process in painstaking detail. I have more interesting things to tinker with and write about, however here are some links to get you started.
 
