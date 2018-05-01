@@ -7,6 +7,14 @@ html {
   overflow-y: scroll;
 }
 
+.wrapper {
+  width: 1000px;
+}
+
+section {
+  width: 700px;
+}
+
 .center {
     text-align: center;
 }
@@ -29,3 +37,4 @@ html {
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
+
