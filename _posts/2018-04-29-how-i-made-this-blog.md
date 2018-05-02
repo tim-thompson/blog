@@ -41,3 +41,13 @@ The second line of the snippet shows how filters can be chained together. It tak
 This means I can display a quick and dirty 'minutes to read' value calculated entirely client side from the post content.
 
 The final line uses a feature of [Jekyll](https://jekyllrb.com/). The excerpt data item is part of the post's data hash and by default is made up of the first block of text in the post. However, this can be customised using an excerpt_separator.
+
+For a quick and easy setup similar to many CMSes Jekyll offers a themeing function. For this site I used the open source [Minimal Theme](https://github.com/pages-themes/minimal) for Jekyll.
+
+I've modified it to suit my tastes which is incredible easy to do. Overriding any CSS values for example can be done easily. CSS modifications and layout modifications have made up the most of the changes I have made. Feel free to compare this site to the example site for [Minimal](https://github.com/pages-themes/minimal).
+
+![Minimal Theme Logo](https://raw.githubusercontent.com/pages-themes/minimal/master/thumbnail.png)
+
+The main changes I made to the styling were increasing the width and font size of the site to make it slightly more readable. But it would be entirely possible to use the theme as a base to make large sweeping changes.
+
+Importing a theme in the config adds the files from the theme to your project at build time. So if you plan to do a major customisation of a theme it might be worth pulling the entire theme into your repository rather than importing it. This will make it slightly easier to see everything that's going on.
