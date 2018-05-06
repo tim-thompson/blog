@@ -36,7 +36,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Starting deployment
-      - [Zappa](https://github.com/Miserlou/Zappa) update dev
+      - zappa update dev
       - echo Deployment completed
 ```
 
@@ -49,7 +49,7 @@ Obviously though this means a deployment will be attempted regardless of whether
 ```yaml
 post_build:
     commands:
-      - if [ $CODEBUILD_BUILD_SUCCEEDING = 1 ]; then echo Build completed on `date`; echo Starting deployment; [Zappa](https://github.com/Miserlou/Zappa) update dev; else echo Build failed ignoring deployment; fi
+      - if [ $CODEBUILD_BUILD_SUCCEEDING = 1 ]; then echo Build completed on `date`; echo Starting deployment; zappa update dev; else echo Build failed ignoring deployment; fi
       - echo Deployment completed
 ```
 
@@ -62,7 +62,7 @@ if [ $CODEBUILD_BUILD_SUCCEEDING = 1 ]
 then 
     echo Build completed on `date` 
     echo Starting deployment 
-    update dev 
+    zappa update dev 
 else 
     echo Build failed ignoring deployment 
 fi
