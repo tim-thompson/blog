@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Failing Python Tests Don't Stop Build in AWS Codebuild
+title: Failing Python Tests Don't Stop Build in AWS CodeBuild
 ---
 
 Here's a short post to provide a quick solution to a problem I came across while using AWS CodeBuild with Python tests. Though I say problem, in reality it is intended functionality for AWS CodeBuild. But this workaround keeps things slightly neater for the way that I'm doing things (probably not the right way!) but it may help you.
