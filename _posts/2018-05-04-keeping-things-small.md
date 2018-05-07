@@ -14,3 +14,5 @@ It differs in this way from Django where many features such as user handling are
 Those 150 lines of code cover database connection and modelling, input and response marshalling, error handling, routing of requests and database interaction. There are a further 200 lines of code for testing the application.
 
 I also personally think it's very readable and easy to see what's going on throughout the application.
+
+**Under Construction - this post is still being written, please stand by.**
