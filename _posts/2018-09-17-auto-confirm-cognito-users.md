@@ -55,6 +55,6 @@ def lambda_handler(event, context):
   print("error with cognito trigger")
 ```
 
-Now head back to the Cognito User Pool settings and from the triggers page select your newly created Lambda function.
+Now head back to the Cognito User Pool settings and from the triggers page under `Pre sign-up Trigger`, select your newly created Lambda function.
 
 You will now be able to sign up users and see that they have been automatically confirmed and can log in straight away.
