@@ -3,7 +3,9 @@ layout: post
 title: Automatically Confirming AWS Cognito Users
 ---
 
-the SaaS product I am creating uses AWS Cognito for user and identity management. As the product is very niche I wanted to make the sign up process as simple as possible. This meant once the registration form is complete, immediately log the user in and place them on the dashboard to begin onboarding and try to hook them straight away. The default setup for AWS Cognito requires users to verify their email address which confirms their account in the process. Clearly this doesn't fit my desired flow but luckily there is a simple workaround.
+The SaaS product I am creating uses AWS Cognito for user and identity management. As the product is very niche I wanted to make the sign up process as simple as possible. This meant once the registration form is complete, immediately log the user in and place them on the dashboard to begin onboarding and try to hook them straight away. The default setup for AWS Cognito requires users to verify their email address which confirms their account in the process. Clearly this doesn't fit my desired flow but luckily there is a simple workaround.
+
+![Cognito Logo](https://cdn-images-1.medium.com/max/800/1*ubdzj9K3MrbMb0Ep0UV3IA.png)
 
 AWS Cognito provides a series of triggers that can be linked to AWS Lambda functions. Each trigger executes the associated Lambda function at a point in the sign up/confirmation process, providing event detail that allows for additional verification, automated welcome emails etc.
 
@@ -52,5 +54,7 @@ def lambda_handler(event, context):
   
   print("error with cognito trigger")
 ```
+
+Now head back to the Cognito User Pool settings and from the triggers page select your newly created Lambda function.
 
 You will now be able to sign up users and see that they have been automatically confirmed and can log in straight away.
