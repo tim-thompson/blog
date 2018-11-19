@@ -13,6 +13,7 @@ url: http://tim-thompson.co.uk
 plugins: 
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-jupyter-notebook
 
 # Pagination Options
 paginate: 5
