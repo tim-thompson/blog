@@ -15,25 +15,25 @@ The Pre sign-up Cognito trigger that we will be using produces an event that loo
 
 ```json
 {
-   'version':'1',
-   'region':'eu-west-2',
-   'userPoolId':'eu-west-2_xxxxxxxxx',
-   'userName':'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
-   'callerContext':{
-      'awsSdkVersion':'aws-sdk-unknown-unknown',
-      'clientId':'xxxxxxxxxxxxxxxxxxxxxxxxxx'
+   "version":"1",
+   "region":"eu-west-2",
+   "userPoolId":"eu-west-2_xxxxxxxxx",
+   "userName":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+   "callerContext":{
+      "awsSdkVersion":"aws-sdk-unknown-unknown",
+      "clientId":"xxxxxxxxxxxxxxxxxxxxxxxxxx"
    },
-   'triggerSource':'PreSignUp_SignUp',
-   'request':{
-      'userAttributes':{
-         'email':'me@tim-thompson.co.uk'
+   "triggerSource":"PreSignUp_SignUp",
+   "request":{
+      "userAttributes":{
+         "email":"me@tim-thompson.co.uk"
       },
-      'validationData':None
+      "validationData":None
    },
-   'response':{
-      'autoConfirmUser':False,
-      'autoVerifyEmail':False,
-      'autoVerifyPhone':False
+   "response":{
+      "autoConfirmUser":False,
+      "autoVerifyEmail":False,
+      "autoVerifyPhone":False
    }
 }
 ```
